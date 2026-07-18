@@ -14,16 +14,16 @@
 
 Стек
 
-**Front:** React + Vite, React Router, звичайний CSS
-**Back:** Node.js + Express
-**БД:** SQLite (better-sqlite3)
-**Деплой:** Docker + Railway
+Front: React + Vite, React Router, звичайний CSS
+Back: Node.js + Express
+БД: SQLite (better-sqlite3)
+Деплой: Docker + Railway
 
-## Запустити локально
+Запустити локально
 Треба Node.js 18+ (краще 20).
 ```bash
 git clone https://github.com/ChaikaValentin/kvytoknubip.git
 cd kvytoknubip
-npm install     # заразом підтягне залежності клієнта (postinstall)
-npm run seed    # наповнити базу демоданими
-npm run dev     # клієнт → http://localhost:5173, API → http://localhost:3000
+npm install
+npm run seed
+npm run dev
