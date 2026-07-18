@@ -8,10 +8,12 @@ import sessionsRouter from './routes/sessions.js'
 import ordersRouter from './routes/orders.js'
 import ticketsRouter from './routes/tickets.js'
 import adminRouter from './routes/admin.js'
+import healthRouter from './routes/health.js'
 
 const app = express()
 app.use(express.json())
 
+app.use('/api/health', healthRouter)
 app.use('/api/movies', moviesRouter)
 app.use('/api/cinemas', cinemasRouter)
 app.use('/api/sessions', sessionsRouter)
